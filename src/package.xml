@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Presentation_PresenterController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Presentation_Presenter</members>
+        <members>Presentation_PresenterApp</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Presentation__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Presentation__c-Presentation Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>39.0</version>
+</Package>

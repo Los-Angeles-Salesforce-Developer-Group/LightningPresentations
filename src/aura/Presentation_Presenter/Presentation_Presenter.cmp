@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction" 
+    access="global" 
+    controller="Presentation_PresenterController">
+    
+    <ltng:require scripts="{!$Resource.jQuery}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="recordId" type="String" access="global" />
+    <aura:attribute name="slideIds" type="List" />
+    <aura:attribute name="currentSlideId" type="String" />
+    <aura:attribute name="slideIdx" type="Integer" default="0" />
+    
+    <!--img style="margin-left:auto;margin-right:auto;display=block;" src="/sfc/servlet.shepherd/version/download/0681I0000006MvR" /-->
+    <img onclick="{!c.nextSlide}" id="slideImgTag" style="margin-left:auto;margin-right:auto;display=block;" src="{!'/sfc/servlet.shepherd/version/download/'+currentSlideId}" />
+    
+</aura:component>
